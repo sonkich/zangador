@@ -1,0 +1,31 @@
+.wrapper {
+  background-image: url('./images/background.png');
+  width: calc(100% - 40px);
+  height: calc(100vh - 40px);
+  background-size: auto 100%;
+  padding: 20px;
+
+  .inner-wrapper {
+    border-radius: 10px;
+    border: 2px solid #86602c;
+    background-color: rgba(antiquewhite, 0.9);
+    height: 100%;
+
+
+    header {
+      display: flex;
+      align-items: center;
+      padding: 10px;
+      justify-content: center;
+
+      .title {
+        font-size: 50px;
+        color: black;
+        font-weight: bold;
+        margin: 0;
+      }
+    }
+
+  }
+}
+
