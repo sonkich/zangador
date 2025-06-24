@@ -1,0 +1,676 @@
+[
+  {
+    "page": 1,
+    "categories": [
+      "Топли напитки",
+      "Студени напитки",
+      "Безалкохолни напитки"
+    ],
+    "items": [
+      {
+        "category": "Топли напитки",
+        "products": [
+          {
+            "name": "Кафе еспресо",
+            "category": "Топли напитки",
+            "volume": "60 мл",
+            "page": 1,
+            "price": 1
+          }
+        ]
+      },
+      {
+        "category": "Студени напитки",
+        "products": [
+          {
+            "name": "Фрапе",
+            "category": "Студени напитки",
+            "volume": "200 мл",
+            "page": 1,
+            "price": 1
+          },
+          {
+            "name": "Бяло фрапе",
+            "category": "Студени напитки",
+            "volume": "200 мл",
+            "page": 1,
+            "price": 1
+          },
+          {
+            "name": "Фредо капучино",
+            "category": "Студени напитки",
+            "volume": "150 мл",
+            "page": 1,
+            "price": 1
+          },
+          {
+            "name": "Фрапучино с карамел",
+            "category": "Студени напитки",
+            "volume": "200 мл",
+            "page": 1,
+            "price": 1
+          },
+          {
+            "name": "Шейк",
+            "category": "Студени напитки",
+            "ingredients": "(Ягода, Малина, Банан)",
+            "volume": "200 мл",
+            "page": 1,
+            "price": 1
+          }
+        ]
+      },
+      {
+        "category": "Безалкохолни напитки",
+        "products": [
+          {
+            "name": "Кока Кола/Фанта/Спрайт",
+            "category": "Безалкохолни напитки",
+            "volume": "250 мл",
+            "page": 1,
+            "price": 1
+          },
+          {
+            "name": "Сода",
+            "category": "Безалкохолни напитки",
+            "volume": "250 мл ",
+            "page": 1,
+            "price": 1
+          },
+          {
+            "name": "Минерална вода",
+            "category": "Безалкохолни напитки",
+            "volume": "500 мл",
+            "page": 1,
+            "price": 1
+          },
+          {
+            "name": "Натурален сок",
+            "category": "Безалкохолни напитки",
+            "volume": "200 мл",
+            "page": 1,
+            "price": 1
+          },
+          {
+            "name": "Студен чай",
+            "category": "Безалкохолни напитки",
+            "volume": "500 мл",
+            "page": 1,
+            "price": 1
+          },
+          {
+            "name": "Red Bull",
+            "category": "Безалкохолни напитки",
+            "volume": "250 мл",
+            "page": 1,
+            "price": 1
+          },
+          {
+            "name": "Фреш",
+            "category": "Безалкохолни напитки",
+            "ingredients": "(Портокал, Грейпфрут, Лимон)",
+            "volume": "200 мл",
+            "page": 1,
+            "price": 1
+          }
+        ]
+      }
+    ],
+    "count": 13
+  },
+  {
+    "page": 2,
+    "categories": [
+      "Бира",
+      "Вино",
+      "Шампанско",
+      "Ядки"
+    ],
+    "items": [
+      {
+        "category": "Бира",
+        "products": [
+          {
+            "name": "Бакарди Брийзър",
+            "category": "Бира",
+            "volume": "1 бут",
+            "page": 2,
+            "price": 1
+          },
+          {
+            "name": "Бира БГ",
+            "category": "Бира",
+            "volume": "330 мл ",
+            "page": 2,
+            "price": 1
+          },
+          {
+            "name": "Корона",
+            "category": "Бира",
+            "volume": "330 мл ",
+            "page": 2,
+            "price": 1
+          }
+        ]
+      },
+      {
+        "category": "Вино",
+        "products": [
+          {
+            "name": "Вино",
+            "category": "Вино",
+            "volume": "375 мл",
+            "page": 2,
+            "price": 1
+          },
+          {
+            "name": "Вино",
+            "category": "Вино",
+            "volume": "750 мл",
+            "page": 2,
+            "price": 1
+          }
+        ]
+      },
+      {
+        "category": "Шампанско",
+        "products": [
+          {
+            "name": "Мартини",
+            "category": "Шампанско",
+            "volume": "750 мл",
+            "page": 2,
+            "price": 1
+          },
+          {
+            "name": "Моет",
+            "category": "Шампанско",
+            "volume": "750 мл",
+            "page": 2,
+            "price": 1
+          }
+        ]
+      },
+      {
+        "category": "Ядки",
+        "products": [
+          {
+            "name": "Ядки",
+            "category": "Ядки",
+            "ingredients": "(Кашу, Бадем, Лешник, Шамфъстък)",
+            "volume": "100 гр",
+            "page": 2,
+            "price": 1
+          },
+          {
+            "name": "Шоколад",
+            "category": "Ядки",
+            "volume": "100 гр",
+            "page": 2,
+            "price": 1
+          }
+        ]
+      }
+    ],
+    "count": 9
+  },
+  {
+    "page": 3,
+    "categories": [
+      "Водка",
+      "Джин",
+      "Ликьори"
+    ],
+    "items": [
+      {
+        "category": "Водка",
+        "products": [
+          {
+            "name": "Водка БГ",
+            "category": "Водка",
+            "volume": "50 мл",
+            "page": 3,
+            "price": 1
+          },
+          {
+            "name": "Водка Белуга",
+            "category": "Водка",
+            "volume": "50 мл ",
+            "page": 3,
+            "price": 1
+          },
+          {
+            "name": "Водка Внос",
+            "category": "Водка",
+            "volume": "50 мл",
+            "page": 3,
+            "price": 1
+          },
+          {
+            "name": "Водка Grey Goose",
+            "category": "Водка",
+            "volume": "50 мл",
+            "page": 3,
+            "price": 1
+          }
+        ]
+      },
+      {
+        "category": "Джин",
+        "products": [
+          {
+            "name": "Джин БГ",
+            "category": "Джин",
+            "volume": "50 мл",
+            "page": 3,
+            "price": 1
+          },
+          {
+            "name": "Джин внос",
+            "category": "Джин",
+            "volume": "50 мл",
+            "page": 3,
+            "price": 1
+          }
+        ]
+      },
+      {
+        "category": "Ликьори",
+        "products": [
+          {
+            "name": "Мента",
+            "category": "Ликьори",
+            "volume": "50 мл",
+            "page": 3,
+            "price": 1
+          },
+          {
+            "name": "Мартини",
+            "category": "Ликьори",
+            "volume": "50 мл",
+            "page": 3,
+            "price": 1
+          },
+          {
+            "name": "Кампари",
+            "category": "Ликьори",
+            "volume": "50 мл",
+            "page": 3,
+            "price": 1
+          },
+          {
+            "name": "Бейлис",
+            "category": "Ликьори",
+            "volume": "50 мл",
+            "page": 3,
+            "price": 1
+          }
+        ]
+      }
+    ],
+    "count": 10
+  },
+  {
+    "page": 4,
+    "categories": [
+      "Уиски"
+    ],
+    "items": [
+      {
+        "category": "Уиски",
+        "products": [
+          {
+            "name": "Джак Даниелс",
+            "category": "Уиски",
+            "volume": "50 мл",
+            "page": 4,
+            "price": 1
+          },
+          {
+            "name": "Джентълмен Джак",
+            "category": "Уиски",
+            "volume": "50 мл",
+            "page": 4,
+            "price": 1
+          },
+          {
+            "name": "Уиски внос",
+            "category": "Уиски",
+            "volume": "50 мл",
+            "page": 4,
+            "price": 1
+          },
+          {
+            "name": "Черен Буш",
+            "category": "Уиски",
+            "volume": "50 мл",
+            "page": 4,
+            "price": 1
+          },
+          {
+            "name": "Уиски 12г",
+            "category": "Уиски",
+            "volume": "50 мл",
+            "page": 4,
+            "price": 1
+          },
+          {
+            "name": "Уиски 15г",
+            "category": "Уиски",
+            "volume": "50 мл",
+            "page": 4,
+            "price": 1
+          },
+          {
+            "name": "Уиски 18г",
+            "category": "Уиски",
+            "volume": "50 мл",
+            "page": 4,
+            "price": 1
+          },
+          {
+            "name": "Уиски Balvenie 12г",
+            "category": "Уиски",
+            "volume": "50 мл",
+            "page": 4,
+            "price": 1
+          },
+          {
+            "name": "Уиски Lagavulin 16г",
+            "category": "Уиски",
+            "volume": "50 мл",
+            "page": 4,
+            "price": 1
+          },
+          {
+            "name": "Уиски Woodford Reserve",
+            "category": "Уиски",
+            "volume": "50 мл",
+            "page": 4,
+            "price": 1
+          },
+          {
+            "name": "Уиски Macallan",
+            "category": "Уиски",
+            "volume": "50 мл",
+            "page": 4,
+            "price": 1
+          }
+        ]
+      }
+    ],
+    "count": 11
+  },
+  {
+    "page": 5,
+    "categories": [
+      "Ром",
+      "Анасонови напитки"
+    ],
+    "items": [
+      {
+        "category": "Ром",
+        "products": [
+          {
+            "name": "Бакарди ",
+            "category": "Ром",
+            "ingredients": "(Бял, Черен)",
+            "volume": "50 мл",
+            "page": 5,
+            "price": 1
+          },
+          {
+            "name": "Малибу",
+            "category": "Ром",
+            "volume": "50 мл",
+            "page": 5,
+            "price": 1
+          },
+          {
+            "name": "Хавана клуб 7",
+            "category": "Ром",
+            "volume": "50 мл",
+            "page": 5,
+            "price": 1
+          }
+        ]
+      },
+      {
+        "category": "Анасонови напитки",
+        "products": [
+          {
+            "name": "Узо",
+            "category": "Анасонови напитки",
+            "volume": "50 мл",
+            "page": 5,
+            "price": 1
+          },
+          {
+            "name": "Перно",
+            "category": "Анасонови напитки",
+            "volume": "50 мл",
+            "page": 5,
+            "price": 1
+          }
+        ]
+      }
+    ],
+    "count": 5
+  },
+  {
+    "page": 7,
+    "categories": [
+      "Шотове"
+    ],
+    "items": [
+      {
+        "category": "Шотове",
+        "products": [
+          {
+            "name": "Йегермайстер",
+            "category": "Шотове",
+            "volume": "25 мл",
+            "page": 7,
+            "price": 1
+          },
+          {
+            "name": "Афтършок",
+            "category": "Шотове",
+            "volume": "25 мл",
+            "page": 7,
+            "price": 1
+          },
+          {
+            "name": "Абсент",
+            "category": "Шотове",
+            "volume": "25 мл",
+            "page": 7,
+            "price": 1
+          },
+          {
+            "name": "Текила",
+            "category": "Шотове",
+            "ingredients": "(Златна, Сребърна)",
+            "volume": "25 мл",
+            "page": 7,
+            "price": 1
+          },
+          {
+            "name": "Бисквитка",
+            "category": "Шотове",
+            "ingredients": "(Водка ванилия, франджелико)",
+            "volume": "25 мл",
+            "page": 7,
+            "price": 1
+          },
+          {
+            "name": "Чийзкейк",
+            "category": "Шотове",
+            "ingredients": "(Черен афтършок, болс йогурт)",
+            "volume": "25 мл",
+            "page": 7,
+            "price": 1
+          },
+          {
+            "name": "Арабска свирка",
+            "category": "Шотове",
+            "ingredients": "(Каула, бейлис, сметана)",
+            "volume": "25 мл",
+            "page": 7,
+            "price": 1
+          },
+          {
+            "name": "Б-52",
+            "category": "Шотове",
+            "ingredients": "(Каула, бейлис, коантро)",
+            "volume": "25 мл",
+            "page": 7,
+            "price": 1
+          },
+          {
+            "name": "Кана",
+            "category": "Шотове",
+            "ingredients": "(Водка ванилия, натурален сок, скоч, йегермайстер, редбул)",
+            "volume": "400 мл",
+            "page": 7,
+            "price": 1
+          },
+          {
+            "name": "Скинос",
+            "category": "Шотове",
+            "volume": "25 мл",
+            "page": 7,
+            "price": 1
+          }
+        ]
+      }
+    ],
+    "count": 10
+  },
+  {
+    "page": 6,
+    "categories": [
+      "Коктейли"
+    ],
+    "items": [
+      {
+        "category": "Коктейли",
+        "products": [
+          {
+            "name": "Скини Бич",
+            "category": "Коктейли",
+            "ingredients": "(Водка, сода, фреш лимон)",
+            "volume": "400 мл",
+            "page": 6,
+            "price": 1
+          },
+          {
+            "name": "Порнстар мартини",
+            "category": "Коктейли",
+            "ingredients": "(Водка ванилия, пасоа, пешън фрут, лайм)",
+            "volume": "120 мл",
+            "page": 6,
+            "price": 1
+          },
+          {
+            "name": "Мохито",
+            "category": "Коктейли",
+            "ingredients": "(ром, лайм, захарен сироп, сода)",
+            "volume": "400 мл",
+            "page": 6,
+            "price": 1
+          },
+          {
+            "name": "Май Тай",
+            "category": "Коктейли",
+            "ingredients": "(Бял ром, ром спайс, лайм, коантро, бадемов сироп)",
+            "volume": "100 мл",
+            "page": 6,
+            "price": 1
+          },
+          {
+            "name": "Кайпириня",
+            "category": "Коктейли",
+            "ingredients": "(Кашаса, лайм, захарен сироп, сода)",
+            "volume": "150 мл",
+            "page": 6,
+            "price": 1
+          },
+          {
+            "name": "Аперол Шприц",
+            "category": "Коктейли",
+            "ingredients": "(Аперол, просеко, сода)",
+            "volume": "210 мл",
+            "page": 6,
+            "price": 1
+          },
+          {
+            "name": "Негрони",
+            "category": "Коктейли",
+            "ingredients": "(Джин, кампари, сладък вермут)",
+            "volume": "90 мл",
+            "page": 6,
+            "price": 1
+          },
+          {
+            "name": "Космополитън",
+            "category": "Коктейли",
+            "ingredients": "(Водка, сок боровинка, коантро, лайм, захарен сироп)",
+            "volume": "150 мл",
+            "page": 6,
+            "price": 1
+          },
+          {
+            "name": "Маргарита",
+            "category": "Коктейли",
+            "ingredients": "(Текила, коантро, лайм)",
+            "volume": "120 мл",
+            "page": 6,
+            "price": 1
+          },
+          {
+            "name": "Лонг Айлънд",
+            "category": "Коктейли",
+            "ingredients": "(Водка, джин, ром, коантро, текила, кола, лайм)",
+            "volume": "220 мл",
+            "page": 6,
+            "price": 1
+          },
+          {
+            "name": "Уиски сауър",
+            "category": "Коктейли",
+            "ingredients": "(Бърбън, захарен сироп, фреш лимон, белтък)",
+            "volume": "120 мл",
+            "page": 6,
+            "price": 1
+          },
+          {
+            "name": "Водка сауър",
+            "category": "Коктейли",
+            "ingredients": "(Водка, захарен сироп, фреш лимон, белтък)",
+            "volume": "120 мл",
+            "page": 6,
+            "price": 1
+          },
+          {
+            "name": "Амарето сауър",
+            "category": "Коктейли",
+            "ingredients": "(Амарето, захарен сироп, фреш лимон, белтък)",
+            "volume": "120 мл",
+            "page": 6,
+            "price": 1
+          },
+          {
+            "name": "Скинос сауър",
+            "category": "Коктейли",
+            "ingredients": "(Скинос, захарен сироп, фреш лимон, белтък)",
+            "volume": "120 мл",
+            "page": 6,
+            "price": 1
+          }
+        ]
+      }
+    ],
+    "count": 14
+  }
+]
