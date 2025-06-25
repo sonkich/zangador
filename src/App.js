@@ -35,9 +35,9 @@ function App() {
         let xUp = evt.touches[0].clientX;
         let xDiff = xDown - xUp;
 
-        if (xDiff > 0) {
+        if (xDiff > 5) {
             turnPage('right');
-        } else {
+        } else if (xDiff < -5) {
             turnPage('left')
         }
 
