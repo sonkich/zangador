@@ -9,28 +9,50 @@ import { useState } from 'react';
 function App() {
     const [activePage, setActivePage] = useState(pages[0]);
     const [currentPage, setCurrentPage] = useState(0);
-    let touchStart = 0;
 
-    window.addEventListener('touchstart', (e) => {
-        touchStart = e.targetTouches[0].clientX;
-        console.log(e);
-    });
+    document.addEventListener('touchstart', handleTouchStart, false);
+    document.addEventListener('touchmove', handleTouchMove, false);
 
-    window.addEventListener('touchend', (e) => {
-        let touchEnd = e.changedTouches[0].clientX;
-        console.log(e);
+    let xDown = null;
 
-        if (touchStart > touchEnd) {
-            if (currentPage === pages.length - 1) return;
-            setActivePage(pages[currentPage + 1]);
-            setCurrentPage(currentPage + 1);
-        } else if (touchStart < touchEnd) {
+    function getTouches(evt) {
+        return evt.touches || evt.originalEvent.touches;
+    }
+
+    function handleTouchStart(evt) {
+        const firstTouch = getTouches(evt)[0];
+        xDown = firstTouch.clientX;
+    };
+
+    function handleTouchMove(evt) {
+        if (!xDown) {
+            return;
+        }
+
+        let xUp = evt.touches[0].clientX;
+        let xDiff = xDown - xUp;
+
+        if (xDiff > 0) {
+            turnPage('right');
+        } else {
+            turnPage('left')
+        }
+
+        xDown = null;
+    };
+
+    function turnPage(direction) {
+        if (direction === 'left') {
             if (currentPage === 0) return;
             setActivePage(pages[currentPage - 1]);
             setCurrentPage(currentPage - 1);
+        } else if (direction === 'right') {
+            if (currentPage === pages.length - 1) return;
+            setActivePage(pages[currentPage + 1]);
+            setCurrentPage(currentPage + 1);
         }
-        return
-    })
+
+    }
 
     return (
         <div className="wrapper">
@@ -63,18 +85,9 @@ function App() {
                     })}
                 </div>
                 <div className="actions">
-                    <img src={arrow} onClick={() => {
-                        if (currentPage === 0) return;
-                        setActivePage(pages[currentPage - 1]);
-                        setCurrentPage(currentPage - 1);
-                    }}
-                        className="left-arrow" alt="Arrow icon" />
+                    <img src={arrow} onClick={() => turnPage('left')} className="left-arrow" alt="Arrow icon" />
                     <img src={swipe} alt="Swipe indicator icon" />
-                    <img src={arrow} onClick={() => {
-                        if (currentPage === pages.length - 1) return;
-                        setActivePage(pages[currentPage + 1]);
-                        setCurrentPage(currentPage + 1);
-                    }} alt="Arrow icon" />
+                    <img src={arrow} onClick={() => turnPage('right')} alt="Arrow icon" />
                 </div>
             </div>
         </div>
