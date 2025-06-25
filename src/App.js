@@ -10,6 +10,9 @@ function App() {
     const [activePage, setActivePage] = useState(pages[0]);
     const [currentPage, setCurrentPage] = useState(0);
 
+    let categoriesArr = [];
+    pages.forEach(page => categoriesArr.push(...page.categories));
+
     document.addEventListener('touchstart', handleTouchStart, false);
     document.addEventListener('touchmove', handleTouchMove, false);
 
@@ -54,13 +57,28 @@ function App() {
 
     }
 
+    function findPage(category) {
+        setActivePage(pages.find(page => page.categories.includes(category)));
+    }
+
     return (
         <div className="wrapper">
             <div className="inner-wrapper">
                 <header>
                     <img src={globeIcon} alt="Globe icon" />
                     <h3 className="title">МЕНЮ</h3>
-                    <img src={menuIcon} alt="Menu icon" />
+                    <div class="btn-group">
+                        <button type="Dropdown" class="btn btn-secondary" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                            <img src={menuIcon} alt="Menu icon" />
+                        </button>
+                        <div class="dropdown-menu dropdown-menu-right">
+                            {
+                                categoriesArr.map(category => {
+                                    return <button onClick={() => findPage(category)} class="dropdown-item" type="button" name={category}>{category}</button>
+                                })
+                            }
+                        </div>
+                    </div>
                 </header>
                 <div className="menu">
                     {activePage.items.map((item) => {
