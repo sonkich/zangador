@@ -5,57 +5,37 @@ import globeIcon from './images/globe.png';
 import arrow from './images/arrow.png';
 import swipe from './images/swipe.png';
 import { useState } from 'react';
+import { useSwipeable } from 'react-swipeable';
 
 function App() {
     const [activePage, setActivePage] = useState(pages[0]);
     const [currentPage, setCurrentPage] = useState(0);
 
-    document.addEventListener('touchstart', handleTouchStart, false);
-    document.addEventListener('touchmove', handleTouchMove, false);
-
-    let xDown = null;
-
-    function getTouches(evt) {
-        return evt.touches || evt.originalEvent.touches;
-    }
-
-    function handleTouchStart(evt) {
-        const firstTouch = getTouches(evt)[0];
-        xDown = firstTouch.clientX;
-    };
-
-    function handleTouchMove(evt) {
-        if (!xDown) {
-            return;
-        }
-
-        let xUp = evt.touches[0].clientX;
-        let xDiff = xDown - xUp;
-
-        if (xDiff > 0) {
-            turnPage('right');
-        } else {
-            turnPage('left')
-        }
-
-        xDown = null;
-    };
+    const handlers = useSwipeable({
+        onSwipedLeft: () => turnPage('right'),
+        onSwipedRight: () => turnPage('left'),
+        swipeDuration: 500,
+        preventScrollOnSwipe: true,
+        trackMouse: true
+    });
 
     function turnPage(direction) {
         if (direction === 'left') {
             if (currentPage === 0) return;
-            setActivePage(pages[currentPage - 1]);
-            setCurrentPage(currentPage - 1);
+            setPage(currentPage - 1);
         } else if (direction === 'right') {
             if (currentPage === pages.length - 1) return;
-            setActivePage(pages[currentPage + 1]);
-            setCurrentPage(currentPage + 1);
+            setPage(currentPage + 1);
         }
+    }
 
+    function setPage(number) {
+        setActivePage(pages[number]);
+        setCurrentPage(number);
     }
 
     return (
-        <div className="wrapper">
+        <div className="wrapper" {...handlers}>
             <div className="inner-wrapper">
                 <header>
                     <img src={globeIcon} alt="Globe icon" />
@@ -64,7 +44,7 @@ function App() {
                 </header>
                 <div className="menu">
                     {activePage.items.map((item) => {
-                        return <div className="category">
+                        return <div className='category' key={item.category}>
                             <p className="category-title">{item.category}</p>
                             {
                                 item.products.map(product => {
