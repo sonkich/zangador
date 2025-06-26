@@ -37,6 +37,28 @@
       background-color: antiquewhite;
       z-index: 1;
       border-radius: 10px;
+
+      .close-btn{
+        margin-bottom: 0;
+        padding-bottom: 0;
+        text-align: end;
+      }
+
+      p {
+        text-align: center;
+        padding: 10px;
+      }
+
+      .category-item {
+        margin: 0;
+        padding: 8px 20px;
+        font-size: 17px;
+      }
+
+      img {
+        width: 30px;
+        height: 30px;
+      }
     }
 
     header {
@@ -107,4 +129,3 @@
     }
   }
 }
-
