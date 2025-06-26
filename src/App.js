@@ -39,10 +39,7 @@ function App() {
     function toggleMenu() {
         setShowMenu(!showMenu);
     }
-    function findPage(category) {
-        setActivePage(pages.find(page => page.categories.includes(category)));
-        toggleMenu();
-    }
+
     return (
         <div className="wrapper" {...handlers}>
             <div className="inner-wrapper">
@@ -53,7 +50,11 @@ function App() {
                             {
                                 pages.map(page => {
                                     return page.categories.map(category => {
-                                        return <p onClick={() => findPage(category)} class="category-item" type="button" name={category}>{category}</p>
+                                        return <p onClick={() => {
+                                            setActivePage(page);
+                                            toggleMenu();
+                                        }}
+                                            class="category-item" type="button" name={category}>{category}</p>
                                     })
                                 })
                             }
