@@ -3,6 +3,8 @@ import pages from './data/products.json'
 import menuIcon from './images/menu_icon.svg';
 import globeIcon from './images/globe.png';
 import closeIcon from './images/close.png';
+import surfIcon from './images/surfing.png';
+import lineIcon from './images/minus.png';
 import arrow from './images/arrow.png';
 import swipe from './images/swipe.png';
 import { useState } from 'react';
@@ -12,8 +14,6 @@ function App() {
     const [activePage, setActivePage] = useState(pages[0]);
     const [currentPage, setCurrentPage] = useState(0);
     const [showMenu, setShowMenu] = useState(false);
-    console.log(currentPage);
-    
 
     const handlers = useSwipeable({
         onSwipedLeft: () => turnPage('right'),
@@ -42,9 +42,8 @@ function App() {
         setShowMenu(!showMenu);
     }
 
-    function redirectToPage(page, number) {
-        setActivePage(page);
-        setCurrentPage(number);
+    function redirectToPage(number) {
+        setPage(number - 1);
         toggleMenu();
     }
 
@@ -58,8 +57,14 @@ function App() {
                             {
                                 pages.map(page => {
                                     return page.categories.map(category => {
-                                        return <p onClick={() => redirectToPage(page, pages.indexOf(page))}
-                                            class="category-item" type="button" name={category}>{category}</p>
+                                        return <div onClick={() => redirectToPage(page.page)}
+                                            class="category-item" type="button" name={category}>
+                                            <img src={surfIcon} className='surf-icon left-surf-icon' />
+                                            <img src={lineIcon} className='line' />
+                                            {category}
+                                            <img src={lineIcon} className='line' />
+                                            <img src={surfIcon} className='surf-icon right-surf-icon' />
+                                        </div>
                                     })
                                 })
                             }
@@ -99,7 +104,7 @@ function App() {
                     <img src={arrow} onClick={() => turnPage('right')} alt="Arrow icon" />
                 </div>
             </div>
-        </div>
+        </div >
     );
 }
 
