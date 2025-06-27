@@ -12,6 +12,8 @@ function App() {
     const [activePage, setActivePage] = useState(pages[0]);
     const [currentPage, setCurrentPage] = useState(0);
     const [showMenu, setShowMenu] = useState(false);
+    console.log(currentPage);
+    
 
     const handlers = useSwipeable({
         onSwipedLeft: () => turnPage('right'),
@@ -40,6 +42,12 @@ function App() {
         setShowMenu(!showMenu);
     }
 
+    function redirectToPage(page, number) {
+        setActivePage(page);
+        setCurrentPage(number);
+        toggleMenu();
+    }
+
     return (
         <div className="wrapper" {...handlers}>
             <div className="inner-wrapper">
@@ -50,10 +58,7 @@ function App() {
                             {
                                 pages.map(page => {
                                     return page.categories.map(category => {
-                                        return <p onClick={() => {
-                                            setActivePage(page);
-                                            toggleMenu();
-                                        }}
+                                        return <p onClick={() => redirectToPage(page, pages.indexOf(page))}
                                             class="category-item" type="button" name={category}>{category}</p>
                                     })
                                 })
