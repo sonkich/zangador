@@ -70,15 +70,16 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
-        margin: 0;
         padding: 4px 0px;
         font-size: 18px;
         margin: auto;
         max-width: 70%;
         flex-wrap: wrap;
-        gap: 4px;
+        gap: 10px;
 
         .line {
+          height: 1px;
+          background-color: black;
           flex: 1;
         }
 

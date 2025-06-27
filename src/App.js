@@ -60,9 +60,9 @@ function App() {
                                         return <div onClick={() => redirectToPage(page.page)}
                                             class="category-item" type="button" name={category}>
                                             <img src={surfIcon} className='surf-icon left-surf-icon' />
-                                            <img src={lineIcon} className='line' />
+                                            <div className='line'></div>
                                             {category}
-                                            <img src={lineIcon} className='line' />
+                                            <div className='line'></div>
                                             <img src={surfIcon} className='surf-icon right-surf-icon' />
                                         </div>
                                     })
