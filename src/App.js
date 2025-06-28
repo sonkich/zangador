@@ -1,10 +1,12 @@
 import './App.scss';
 import pages from './data/products.json'
+import pagesEN from './data/productsEN.json'
 import menuIcon from './images/menu_icon.svg';
 import globeIcon from './images/globe.png';
 import closeIcon from './images/close.png';
+import bgFlagIcon from './images/flag.png';
+import enFlagIcon from './images/united-kingdom.png';
 import surfIcon from './images/surfing.png';
-import lineIcon from './images/minus.png';
 import arrow from './images/arrow.png';
 import swipe from './images/swipe.png';
 import { useState } from 'react';
@@ -14,6 +16,8 @@ function App() {
     const [activePage, setActivePage] = useState(pages[0]);
     const [currentPage, setCurrentPage] = useState(0);
     const [showMenu, setShowMenu] = useState(false);
+    const [showLanguage, setShowLanguage] = useState(false);
+    const [english, setEnglish] = useState(false);
 
     const handlers = useSwipeable({
         onSwipedLeft: () => turnPage('right'),
@@ -40,6 +44,19 @@ function App() {
 
     function toggleMenu() {
         setShowMenu(!showMenu);
+    }
+    function toggleLanguageMenu() {
+        setShowLanguage(!showLanguage);
+    }
+
+    function changeLanguege(change) {
+        toggleLanguageMenu();
+        setEnglish(change);
+        if (change) {
+            setActivePage(pagesEN[0]);
+        } else {
+            setActivePage(pages[0]);
+        }
     }
 
     function redirectToPage(number) {
@@ -71,9 +88,30 @@ function App() {
                         </div>
                     </div> : null
                 }
+                {
+                    showLanguage ? <div className="menu languages">
+                        <span onClick={() => toggleLanguageMenu()} className="close-btn"><img src={closeIcon} alt="Close icon" /></span>
+                        <div className="languages-container">
+                            {
+                                showLanguage ? <div className="language-menu">
+                                    <div className="language-item" onClick={() => changeLanguege(false)}>
+                                        <img src={bgFlagIcon} className='language-img' />
+                                        <a className='language'>Български</a>
+                                    </div>
+                                    <div className="language-item" onClick={() => changeLanguege(true)}>
+                                        <img src={enFlagIcon} className='language-img' />
+                                        <a className='language'>English</a>
+                                    </div>
+                                </div> : null
+                            }
+                        </div>
+                    </div> : null
+                }
                 <header>
-                    <img src={globeIcon} alt="Globe icon" />
-                    <h3 className="title">МЕНЮ</h3>
+                    <img src={globeIcon} alt="Globe icon" onClick={() => toggleLanguageMenu()} />
+                    <h3 className="title">
+                        {english ? 'MENU' : 'МЕНЮ'}
+                    </h3>
                     <img src={menuIcon} onClick={() => toggleMenu()} alt="Menu icon" />
                 </header>
                 <div className="item-container">
