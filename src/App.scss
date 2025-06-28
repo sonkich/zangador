@@ -118,7 +118,6 @@
       .title {
         font-size: 50px;
         color: black;
-        font-weight: bold;
         margin: 0;
       }
     }
@@ -148,13 +147,11 @@
     .category-title {
       text-align: center;
       font-size: 30px;
-      font-weight: bold;
       margin: 15px 0;
     }
 
     .product {
-      font-size: 22px;
-      font-weight: bold;
+      font-size: 20px;
       display: flex;
       justify-content: space-between;
       align-items: flex-start;
@@ -162,7 +159,7 @@
       margin: 10px 0;
 
       .ingredients {
-        font-size: 20px;
+        font-size: 16px;
         color: blue;
       }
 
