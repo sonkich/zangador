@@ -1,5 +1,5 @@
 import './App.scss';
-import pages from './data/products.json'
+import pagesBG from './data/products.json'
 import pagesEN from './data/productsEN.json'
 import menuIcon from './images/menu_icon.svg';
 import globeIcon from './images/globe.png';
@@ -13,6 +13,7 @@ import { useState } from 'react';
 import { useSwipeable } from 'react-swipeable';
 
 function App() {
+    const [pages, setPages] = useState(pagesBG);
     const [activePage, setActivePage] = useState(pages[0]);
     const [currentPage, setCurrentPage] = useState(0);
     const [showMenu, setShowMenu] = useState(false);
@@ -49,14 +50,21 @@ function App() {
         setShowLanguage(!showLanguage);
     }
 
-    function changeLanguege(change) {
-        toggleLanguageMenu();
+    function changeLanguage(change) {
         setEnglish(change);
         if (change) {
-            setActivePage(pagesEN[0]);
+            setPages(pagesEN);
         } else {
-            setActivePage(pages[0]);
+            setPages(pagesBG);
         }
+        const currentPageIndex = currentPage;
+        if (currentPageIndex === 0) {
+            setPage(0);
+        } else {
+            setPage(1);
+        }
+        setPage(currentPageIndex);
+        toggleLanguageMenu();
     }
 
     function redirectToPage(number) {
@@ -94,11 +102,11 @@ function App() {
                         <div className="languages-container">
                             {
                                 showLanguage ? <div className="language-menu">
-                                    <div className="language-item" onClick={() => changeLanguege(false)}>
+                                    <div className="language-item" onClick={() => changeLanguage(false)}>
                                         <img src={bgFlagIcon} className='language-img' />
                                         <a className='language'>Български</a>
                                     </div>
-                                    <div className="language-item" onClick={() => changeLanguege(true)}>
+                                    <div className="language-item" onClick={() => changeLanguage(true)}>
                                         <img src={enFlagIcon} className='language-img' />
                                         <a className='language'>English</a>
                                     </div>
@@ -128,7 +136,7 @@ function App() {
                                             }
                                         </div>
                                         <div className="price">
-                                            {product.price}лв.
+                                            {product.price}{english ? 'lv.' : 'лв.'}
                                         </div>
                                     </div>
                                 })
