@@ -3,9 +3,7 @@
     "page": 1,
     "categories": [
       "Hot beverages",
-      "Cold beverages",
-      "Soft drinks",
-      "Lemonade"
+      "Cold beverages"
     ],
     "items": [
       {
@@ -60,7 +58,17 @@
             "price": 10
           }
         ]
-      },
+      }
+    ],
+    "count": 6
+  },
+  {
+    "page": 2,
+    "categories": [
+      "Soft drinks",
+      "Lemonade"
+    ],
+    "items": [
       {
         "category": "Soft drinks",
         "products": [
@@ -68,49 +76,49 @@
             "name": "Coca Cola/Fanta/Sprite",
             "category": "Soft drinks",
             "volume": "250 ml",
-            "page": 1,
+            "page": 2,
             "price": 4.5
           },
           {
             "name": "Soda Perrier",
             "category": "Soft drinks",
             "volume": "250 ml ",
-            "page": 1,
+            "page": 2,
             "price": 7
           },
           {
             "name": "Soda",
             "category": "Soft drinks",
             "volume": "250 ml ",
-            "page": 1,
+            "page": 2,
             "price": 3.9
           },
           {
             "name": "Mineral Water",
             "category": "Soft drinks",
             "volume": "500 ml",
-            "page": 1,
+            "page": 2,
             "price": 3.9
           },
           {
             "name": "Natural Juice",
             "category": "Soft drinks",
             "volume": "200 ml",
-            "page": 1,
+            "page": 2,
             "price": 4.5
           },
           {
             "name": "Iced Tea",
             "category": "Soft drinks",
             "volume": "500 ml",
-            "page": 1,
+            "page": 2,
             "price": 5.9
           },
           {
             "name": "Red Bull",
             "category": "Soft drinks",
             "volume": "250 ml",
-            "page": 1,
+            "page": 2,
             "price": 7.9
           },
           {
@@ -118,7 +126,7 @@
             "category": "Soft drinks",
             "ingredients": "(Orange, Grapefruit, Lemon)",
             "volume": "200 ml",
-            "page": 1,
+            "page": 2,
             "price": 7.5
           }
         ]
@@ -131,7 +139,7 @@
             "category": "Lemonade",
             "ingredients": "(Strawberry, Raspberry, Elderflower, Mango)",
             "volume": "280 ml",
-            "page": 1,
+            "page": 2,
             "price": 6
           },
           {
@@ -139,7 +147,7 @@
             "category": "Lemonade",
             "ingredients": "(Strawberry, Raspberry, Elderflower, Mango)",
             "volume": "500 ml ",
-            "page": 1,
+            "page": 2,
             "price": 9
           },
           {
@@ -147,16 +155,16 @@
             "category": "Lemonade",
             "ingredients": "(Strawberry, Raspberry, Elderflower, Mango)",
             "volume": "1 l",
-            "page": 1,
+            "page": 2,
             "price": 17
           }
         ]
       }
     ],
-    "count": 17
+    "count": 11
   },
   {
-    "page": 2,
+    "page": 3,
     "categories": [
       "Beer",
       "Wine",
@@ -171,21 +179,21 @@
             "name": "Bacardi Breezer",
             "category": "Beer",
             "volume": "1 bottle",
-            "page": 2,
+            "page": 3,
             "price": 7.9
           },
           {
             "name": "Beer BG",
             "category": "Beer",
             "volume": "330 ml ",
-            "page": 2,
+            "page": 3,
             "price": 5.9
           },
           {
             "name": "Corona",
             "category": "Beer",
             "volume": "330 ml ",
-            "page": 2,
+            "page": 3,
             "price": 7.9
           }
         ]
@@ -197,14 +205,14 @@
             "name": "Wine",
             "category": "Wine",
             "volume": "375 ml",
-            "page": 2,
+            "page": 3,
             "price": 24.9
           },
           {
             "name": "Wine",
             "category": "Wine",
             "volume": "750 ml",
-            "page": 2,
+            "page": 3,
             "price": 74.9
           }
         ]
@@ -216,14 +224,14 @@
             "name": "Martini",
             "category": "Champagne",
             "volume": "750 ml",
-            "page": 2,
+            "page": 3,
             "price": 270
           },
           {
             "name": "Moet",
             "category": "Champagne",
             "volume": "750 ml",
-            "page": 2,
+            "page": 3,
             "price": 270
           }
         ]
@@ -236,14 +244,14 @@
             "category": "Nuts",
             "ingredients": "(Cashew, almond, hazelnut, pistachio)",
             "volume": "100 g",
-            "page": 2,
+            "page": 3,
             "price": 8.9
           },
           {
             "name": "Chocolate",
             "category": "Nuts",
             "volume": "100 g",
-            "page": 2,
+            "page": 3,
             "price": 8.9
           }
         ]
@@ -252,7 +260,7 @@
     "count": 9
   },
   {
-    "page": 3,
+    "page": 4,
     "categories": [
       "Vodka",
       "Gin",
@@ -266,28 +274,28 @@
             "name": "Vodka BG",
             "category": "Vodka",
             "volume": "50 ml",
-            "page": 3,
+            "page": 4,
             "price": 4.9
           },
           {
             "name": "Vodka Beluga",
             "category": "Vodka",
             "volume": "50 ml ",
-            "page": 3,
+            "page": 4,
             "price": 19.9
           },
           {
             "name": "Vodka",
             "category": "Vodka",
             "volume": "50 ml",
-            "page": 3,
+            "page": 4,
             "price": 7.9
           },
           {
             "name": "Vodka Grey Goose",
             "category": "Vodka",
             "volume": "50 ml",
-            "page": 3,
+            "page": 4,
             "price": 19.9
           }
         ]
@@ -299,21 +307,21 @@
             "name": "Gin BG",
             "category": "Gin",
             "volume": "50 ml",
-            "page": 3,
+            "page": 4,
             "price": 4.9
           },
           {
             "name": "Gin",
             "category": "Gin Imports",
             "volume": "50 ml",
-            "page": 3,
+            "page": 4,
             "price": 7.9
           },
           {
             "name": "Premium  Gin",
             "category": "Gin",
             "volume": "50 ml",
-            "page": 3,
+            "page": 4,
             "price": 12.5
           }
         ]
@@ -325,28 +333,28 @@
             "name": "Mint liqueur",
             "category": "Liqueur",
             "volume": "50 ml",
-            "page": 3,
+            "page": 4,
             "price": 4.9
           },
           {
             "name": "Martini",
             "category": "Liqueur",
             "volume": "50 ml",
-            "page": 3,
+            "page": 4,
             "price": 6.5
           },
           {
             "name": "Campari",
             "category": "Liqueur",
             "volume": "50 ml",
-            "page": 3,
+            "page": 4,
             "price": 6.5
           },
           {
             "name": "Baileys",
             "category": "Liqueur",
             "volume": "50 ml",
-            "page": 3,
+            "page": 4,
             "price": 7.9
           }
         ]
@@ -355,7 +363,7 @@
     "count": 11
   },
   {
-    "page": 4,
+    "page": 5,
     "categories": [
       "Whiskey"
     ],
@@ -367,77 +375,77 @@
             "name": "Jack Daniels",
             "category": "Whiskey",
             "volume": "50 ml",
-            "page": 4,
+            "page": 5,
             "price": 9.9
           },
           {
             "name": "Gentleman Jack",
             "category": "Whiskey",
             "volume": "50 ml",
-            "page": 4,
+            "page": 5,
             "price": 14.9
           },
           {
             "name": "Whiskey Imports",
             "category": "Whiskey",
             "volume": "50 ml",
-            "page": 4,
+            "page": 5,
             "price": 8.9
           },
           {
             "name": "Black Bush",
             "category": "Whiskey",
             "volume": "50 ml",
-            "page": 4,
+            "page": 5,
             "price": 9.9
           },
           {
             "name": "Whiskey 12y",
             "category": "Whiskey",
             "volume": "50 ml",
-            "page": 4,
+            "page": 5,
             "price": 12.9
           },
           {
             "name": "Whiskey 15y",
             "category": "Whiskey",
             "volume": "50 ml",
-            "page": 4,
+            "page": 5,
             "price": 15.9
           },
           {
             "name": "Whiskey 18y",
             "category": "Whiskey",
             "volume": "50 ml",
-            "page": 4,
+            "page": 5,
             "price": 34.9
           },
           {
             "name": "Whiskey Balvenie 12y",
             "category": "Whiskey",
             "volume": "50 ml",
-            "page": 4,
+            "page": 5,
             "price": 29.9
           },
           {
             "name": "Whiskey Lagavulin 16y",
             "category": "Whiskey",
             "volume": "50 ml",
-            "page": 4,
+            "page": 5,
             "price": 39.9
           },
           {
             "name": "Whiskey Woodford Reserve",
             "category": "Whiskey",
             "volume": "50 ml",
-            "page": 4,
+            "page": 5,
             "price": 17.9
           },
           {
             "name": "Whiskey Macallan",
             "category": "Whiskey",
             "volume": "50 ml",
-            "page": 4,
+            "page": 5,
             "price": 29.9
           }
         ]
@@ -446,7 +454,7 @@
     "count": 11
   },
   {
-    "page": 5,
+    "page": 6,
     "categories": [
       "Rum",
       "Anise-flavored drinks"
@@ -460,21 +468,21 @@
             "category": "Rum",
             "ingredients": "(White, Dark)",
             "volume": "50 ml",
-            "page": 5,
+            "page": 6,
             "price": 6.5
           },
           {
             "name": "Malibu",
             "category": "Rum",
             "volume": "50 ml",
-            "page": 5,
+            "page": 6,
             "price": 6.9
           },
           {
             "name": "Havana Club 7",
             "category": "Rum",
             "volume": "50 ml",
-            "page": 5,
+            "page": 6,
             "price": 10.9
           }
         ]
@@ -486,14 +494,14 @@
             "name": "Ouzo",
             "category": "Anise-flavored drinks",
             "volume": "50 ml",
-            "page": 5,
+            "page": 6,
             "price": 6.5
           },
           {
             "name": "Pernod",
             "category": "Anise-flavored drinks",
             "volume": "50 ml",
-            "page": 5,
+            "page": 6,
             "price": 7.5
           }
         ]
@@ -502,7 +510,7 @@
     "count": 5
   },
   {
-    "page": 6,
+    "page": 7,
     "categories": [
       "Shots"
     ],
@@ -548,7 +556,7 @@
             "price": 5.9
           },
           {
-            "name": "Cookie",
+            "name": "Cheesecake",
             "category": "Shots",
             "ingredients": "(Aftershock black, bols yoghurt liqueur)",
             "volume": "25 ml",
@@ -592,7 +600,7 @@
     "count": 10
   },
   {
-    "page": 7,
+    "page": 8,
     "categories": [
       "Cocktails"
     ],
@@ -605,7 +613,7 @@
             "category": "Cocktails",
             "ingredients": "(Vodka, soda, fresh lemon)",
             "volume": "400 ml",
-            "page": 6,
+            "page": 8,
             "price": 15
           },
           {
@@ -613,7 +621,7 @@
             "category": "Cocktails",
             "ingredients": "(Vanilla vodka, passoa, passion fruit, fresh lime)",
             "volume": "120 ml",
-            "page": 6,
+            "page": 8,
             "price": 18
           },
           {
@@ -621,7 +629,7 @@
             "category": "Cocktails",
             "ingredients": "(Rum, fresh lime, simple syrup, soda)",
             "volume": "400 ml",
-            "page": 6,
+            "page": 8,
             "price": 15
           },
           {
@@ -629,7 +637,7 @@
             "category": "Cocktails",
             "ingredients": "(White rum, spiced rum, fresh lime, cointreau, orgeat syrup)",
             "volume": "100 ml",
-            "page": 6,
+            "page": 8,
             "price": 18
           },
           {
@@ -637,7 +645,7 @@
             "category": "Cocktails",
             "ingredients": "(Cachaca, fresh lime, simple syrup, soda)",
             "volume": "150 ml",
-            "page": 6,
+            "page": 8,
             "price": 15
           },
           {
@@ -645,7 +653,7 @@
             "category": "Cocktails",
             "ingredients": "(Aperol, prosecco, soda)",
             "volume": "210 ml",
-            "page": 6,
+            "page": 8,
             "price": 13
           },
           {
@@ -653,7 +661,7 @@
             "category": "Cocktails",
             "ingredients": "(Gin, campari, sweet vermouth)",
             "volume": "90 ml",
-            "page": 6,
+            "page": 8,
             "price": 18
           },
           {
@@ -661,7 +669,7 @@
             "category": "Cocktails",
             "ingredients": "(Vodka, blueberry juice, cointreau, fresh lime, simple syrup)",
             "volume": "150 ml",
-            "page": 6,
+            "page": 8,
             "price": 15
           },
           {
@@ -669,7 +677,7 @@
             "category": "Cocktails",
             "ingredients": "(Tequila, cointreau, fresh lime)",
             "volume": "120 ml",
-            "page": 6,
+            "page": 8,
             "price": 15
           },
           {
@@ -677,7 +685,7 @@
             "category": "Cocktails",
             "ingredients": "(Vodka, gin, rum, cointreau, tequila, cola, fresh lime)",
             "volume": "220 ml",
-            "page": 6,
+            "page": 8,
             "price": 18
           },
           {
@@ -685,7 +693,7 @@
             "category": "Cocktails",
             "ingredients": "(Bourbon, simple syrup, fresh lemon, vegan egg whites)",
             "volume": "120 ml",
-            "page": 6,
+            "page": 8,
             "price": 15
           },
           {
@@ -693,7 +701,7 @@
             "category": "Cocktails",
             "ingredients": "(Vodka, simple syrup, fresh lemon, vegan egg whites)",
             "volume": "120 ml",
-            "page": 6,
+            "page": 8,
             "price": 15
           },
           {
@@ -701,7 +709,7 @@
             "category": "Cocktails",
             "ingredients": "(Amaretto, simple syrup, fresh lemon, vegan egg whites)",
             "volume": "120 ml",
-            "page": 6,
+            "page": 8,
             "price": 15
           },
           {
@@ -709,7 +717,7 @@
             "category": "Cocktails",
             "ingredients": "(Skinos, simple syrup, fresh lemon, vegan egg whites)",
             "volume": "120 ml",
-            "page": 6,
+              "page": 8,
             "price": 15
           }
         ]
