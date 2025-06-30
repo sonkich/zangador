@@ -9,7 +9,7 @@ import enFlagIcon from './images/united-kingdom.png';
 import surfIcon from './images/surfing.png';
 import arrow from './images/arrow.png';
 import swipe from './images/swipe.png';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { useSwipeable } from 'react-swipeable';
 
 function App() {
@@ -19,6 +19,17 @@ function App() {
     const [showMenu, setShowMenu] = useState(false);
     const [showLanguage, setShowLanguage] = useState(false);
     const [english, setEnglish] = useState(false);
+
+    useEffect(() => {
+        const currentPageIndex = currentPage;
+        if (currentPageIndex === 0) {
+            setPage(1);
+        } else {
+            setPage(0);
+        }
+        setPage(currentPageIndex);
+
+    }, [pages]);
 
     const handlers = useSwipeable({
         onSwipedLeft: () => turnPage('right'),
@@ -57,13 +68,6 @@ function App() {
         } else {
             setPages(pagesBG);
         }
-        const currentPageIndex = currentPage;
-        if (currentPageIndex === 0) {
-            setPage(0);
-        } else {
-            setPage(1);
-        }
-        setPage(currentPageIndex);
         toggleLanguageMenu();
     }
 
@@ -83,12 +87,12 @@ function App() {
                                 pages.map(page => {
                                     return page.categories.map(category => {
                                         return <div onClick={() => redirectToPage(page.page)}
-                                            class="category-item" type="button" name={category}>
-                                            <img src={surfIcon} className='surf-icon left-surf-icon' />
+                                            className="category-item">
+                                            <img src={surfIcon} className='surf-icon left-surf-icon' alt="surf-icon"/>
                                             <div className='line'></div>
                                             {category}
                                             <div className='line'></div>
-                                            <img src={surfIcon} className='surf-icon right-surf-icon' />
+                                            <img src={surfIcon} className='surf-icon right-surf-icon' alt="surf-icon"/>
                                         </div>
                                     })
                                 })
@@ -103,11 +107,11 @@ function App() {
                             {
                                 showLanguage ? <div className="language-menu">
                                     <div className="language-item" onClick={() => changeLanguage(false)}>
-                                        <img src={bgFlagIcon} className='language-img' />
+                                        <img src={bgFlagIcon} className='language-img' alt="bulgarian-flag"/>
                                         <a className='language'>Български</a>
                                     </div>
                                     <div className="language-item" onClick={() => changeLanguage(true)}>
-                                        <img src={enFlagIcon} className='language-img' />
+                                        <img src={enFlagIcon} className='language-img' alt="english-flag"/>
                                         <a className='language'>English</a>
                                     </div>
                                 </div> : null
