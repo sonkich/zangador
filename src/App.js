@@ -142,7 +142,7 @@ function App() {
                                         <div className="price">
                                             {product.price}{english ? 'lv.' : 'лв.'}
                                             <br />
-                                            {Math.round((product.price / 1.95583) * 100) / 100}€
+                                            {/* {Math.round((product.price / 1.95583) * 100) / 100}€ */}
                                         </div>
                                     </div>
                                 })
