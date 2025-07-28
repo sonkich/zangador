@@ -88,11 +88,11 @@ function App() {
                                     return page.categories.map(category => {
                                         return <div onClick={() => redirectToPage(page.page)}
                                             className="category-item">
-                                            <img src={surfIcon} className='surf-icon left-surf-icon' alt="surf-icon"/>
+                                            <img src={surfIcon} className='surf-icon left-surf-icon' alt="surf-icon" />
                                             <div className='line'></div>
                                             {category}
                                             <div className='line'></div>
-                                            <img src={surfIcon} className='surf-icon right-surf-icon' alt="surf-icon"/>
+                                            <img src={surfIcon} className='surf-icon right-surf-icon' alt="surf-icon" />
                                         </div>
                                     })
                                 })
@@ -107,11 +107,11 @@ function App() {
                             {
                                 showLanguage ? <div className="language-menu">
                                     <div className="language-item" onClick={() => changeLanguage(false)}>
-                                        <img src={bgFlagIcon} className='language-img' alt="bulgarian-flag"/>
+                                        <img src={bgFlagIcon} className='language-img' alt="bulgarian-flag" />
                                         <a className='language'>Български</a>
                                     </div>
                                     <div className="language-item" onClick={() => changeLanguage(true)}>
-                                        <img src={enFlagIcon} className='language-img' alt="english-flag"/>
+                                        <img src={enFlagIcon} className='language-img' alt="english-flag" />
                                         <a className='language'>English</a>
                                     </div>
                                 </div> : null
@@ -141,6 +141,8 @@ function App() {
                                         </div>
                                         <div className="price">
                                             {product.price}{english ? 'lv.' : 'лв.'}
+                                            <br />
+                                            {Math.round((product.price / 1.95583) * 100) / 100}€
                                         </div>
                                     </div>
                                 })
